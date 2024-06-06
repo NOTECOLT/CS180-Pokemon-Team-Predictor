@@ -1,5 +1,4 @@
 from sklearn.naive_bayes import ComplementNB
-import pandas as pd
 import numpy as np
 import pickle
 import csv
@@ -11,9 +10,9 @@ def print_line():
 team = []
 
 # Load machine learning models
-ability_cnb = pickle.load(open('ability_cnb.sav', 'rb'))
-item_cnb = pickle.load(open('item_cnb.sav', 'rb'))
-moves_cnb = pickle.load(open('moves_cnb.sav', 'rb'))
+ability_cnb = pickle.load(open('models/ability_cnb.sav', 'rb'))
+item_cnb = pickle.load(open('models/item_cnb.sav', 'rb'))
+moves_cnb = pickle.load(open('models/moves_cnb.sav', 'rb'))
 
 # Load the list of VALID POKEMON
 with open('VALID_POKEMON.csv', newline='') as csvfile:
@@ -25,7 +24,7 @@ valid_pokemon = [x.lower() for x in valid_pokemon]
 os.system('cls')
 print("\nPokemon Team Predictor")
 print_line()
-print("Please check VALID_POKEMON.csv for a list of valid pokemon.")
+print("Please check the README file for a list of valid pokemon.")
 
 # TAKE INPUT
 print("Enter a team of six pokemon (separated by new lines):")
