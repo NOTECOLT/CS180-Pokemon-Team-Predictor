@@ -26,7 +26,7 @@ The datasets can be found within the [dataset](/datasets/) folder, which contain
 
 - [preprocessed_input_moves_training_dataset.csv](/datasets/preprocessed_input_moves_training_dataset.csv) - Likewise, each entry in the input moves dataset was also multiplied by 4. The are 30960 entries in each csv file.
 
-Dataset preprocessing can be found in the [predictor-training.ipnyb](/predictor-training.ipynb) file.
+Dataset preprocessing can be found in the [predictor-training.ipnyb](/predictor-training.ipynb) file. Datasets may also be found in our [repository](https://github.com/NOTECOLT/CS180-Pokemon-Team-Predictor).
 
 ## Model
 
@@ -44,7 +44,7 @@ The project uses three separate Complement Naive Bayes Classifiers to identify t
   - Training Set Accuracy: 73.32%
   - Validation Set Accuracy: 66.00%
 
-Model training can be found in the [predictor-training.ipnyb](/predictor-training.ipynb) file.
+Model training can be found in the [predictor-training.ipnyb](/predictor-training.ipynb) file. Models may also be found in our [repository](https://github.com/NOTECOLT/CS180-Pokemon-Team-Predictor).
 
 Overall, the model can usually predict the correct ability and at least 2 moves in the moveset of a pokemon. The held item is less accurate but it seems to at least pick a viable/popular choice of item for that pokemon. Since the model can only take from teams that were posted on the Smogon forum, the model cannot predict adaptations players would make to a current meta. Thus, unorthodox choices/sets are likely to not be predicted by the model. This is a weakness of the model since these niche choices could be specific, strategic choices made by the opposing player that could swing a match.
 
