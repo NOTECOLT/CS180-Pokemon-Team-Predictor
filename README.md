@@ -26,15 +26,25 @@ The datasets can be found within the [dataset](/datasets/) folder, which contain
 
 - [preprocessed_input_moves_training_dataset.csv](/datasets/preprocessed_input_moves_training_dataset.csv) - Likewise, each entry in the input moves dataset was also multiplied by 4. The are 30960 entries in each csv file.
 
+Dataset preprocessing can be found in the [predictor-training.ipnyb](/predictor-training.ipynb) file.
+
 ## Model
 
 The project uses three separate Complement Naive Bayes Classifiers to identify the most probable attributes of each pokemon. The models were created in Scikit-Learn The models can be found and loaded for yourself in the [models](/models/) folder. They are as follows:
 
 - [ability_cnb.sav](/models/ability_cnb.sav) - Machine Learning model used to predict each pokemon's ability. The demo displays the ability that the pokemon is most likely to have given a set team.
+  - Training Set Accuracy: 93.78%
+  - Validation Set Accuracy: 92.55%
 
 - [item_cnb.sav](/models/item_cnb.sav) - Machine Learning model used to predict each pokemon's held item. The demo displays the held item that the pokemon is most likely to have given a set team.
+  - Training Set Accuracy: 62.44%
+  - Validation Set Accuracy: 56.03%
 
 - [moves_cnb.sav](/models/moves_cnb.sav) - Machine Learning model used to predict each pokemon's moves. The demo displays the top four moves that the pokemon is most likely to have given a set team.
+  - Training Set Accuracy: 73.32%
+  - Validation Set Accuracy: 66.00%
+
+Model training can be found in the [predictor-training.ipnyb](/predictor-training.ipynb) file.
 
 ## Using the Program
 
