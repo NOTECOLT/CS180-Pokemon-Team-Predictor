@@ -46,6 +46,8 @@ The project uses three separate Complement Naive Bayes Classifiers to identify t
 
 Model training can be found in the [predictor-training.ipnyb](/predictor-training.ipynb) file.
 
+Overall, the model can usually predict the correct ability and at least 2 moves in the moveset of a pokemon. The held item is less accurate but it seems to at least pick a viable/popular choice of item for that pokemon. Since the model can only take from teams that were posted on the Smogon forum, the model cannot predict adaptations players would make to a current meta. Thus, unorthodox choices/sets are likely to not be predicted by the model. This is a weakness of the model since these niche choices could be specific, strategic choices made by the opposing player that could swing a match.
+
 ## Using the Program
 
 In order to execute the demo, simply clone the project and `cd` into the folder the in which the repository was installed. Then, run `python predictor-demo.py` to run the project.
