@@ -16,7 +16,7 @@ The datasets can be found within the [dataset](/datasets/) folder, which contain
 
 - [raw_full_dataset.json](/datasets/raw_full_dataset.json) - This is the initial output scrapped using the Replay Scouter in json format. The json file contains a total of 1290 team data entries.
 
-- [raw_full_dataset.json](/datasets/raw_full_dataset.csv) - This is the json data which has been lightly processed into .csv format for ease of readability. Each team has been split into six different data entries, one for each pokemon in the team, effectively multiplying the number of data entries to 7740. In each row contains each pokemon's ability, held item, moves, and team members.
+- [raw_full_dataset.csv](/datasets/raw_full_dataset.csv) - This is the json data which has been lightly processed into .csv format for ease of readability. Each team has been split into six different data entries, one for each pokemon in the team, effectively multiplying the number of data entries to 7740. In each row contains each pokemon's ability, held item, moves, and team members.
 
 - [preprocessed_input_dataset.csv](/datasets/preprocessed_input_dataset.csv) - This is the preprocssed input dataset containing all the original teams. The data contains only 2 columns, each pokemon and their team members from the previous file. One-hot encoding was applied on both features.
 
